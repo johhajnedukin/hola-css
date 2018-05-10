@@ -1,18 +1,95 @@
-!DOCTYPE html>
+!<DOCTYPE html>
 <html>
 	<head>
-		<title>Inicio | Plantilla Simple</title>
-		<link rel="stylesheet" type="text/css" href="estilos.css">
-	</head>
+		<title>hola css</title>
+		</head>
+		<style>
+			
+			body{
+				¨font-family:arial sans-serif;
+				font-size: 20px;
+				background: #000 url("descarga.jpg");
+
+			}
+			h1{
+				color:red;
+				/*display: inline;*/
+
+
+
+			}
+			.texto-centrado{
+				text-align: center;
+			}
+			#caja1{
+				background: black;
+				color:white;
+				width: 300px;
+				padding-top: 20px;
+				padding-right: 20px;
+				padding-bottom: 20px;
+				padding-left: 20px;
+				margin: 20px;
+				border-width: 3px;
+				border-color: red;
+				border-style: solid; 
+				float: left;
+				background: #000 url("images.jpg");
+				/*cuando usamos float se van al aire los elementos*/
+			}
+			#caja2{
+				background:black;
+				color:white;
+				width: 300px;
+				padding: 20px;
+				border: 3px solid red;
+				float: left;
+				margin: 20px;
+				
+			}
+			.crl{/*este como un tipo de estandar al float*/
+				clear:both;
+				}
+			.mi-lista{
+				list-style: none;
+				padding: 0;
+				line-height: 2.2em;
+				}
+			li{
+					border-bottom: 2.2em solid #666;
+			}	
+
+
+		</style>
+
 	<body>
-		<div>
-				<h1>Plantilla Simple</h1>
+		
+				<h1 class="texto-centrado">Plantilla Simple</h1>
+			
+				<h2 >presentacion</h2>
+
 			
 			<div>
-				<h2>presentacion</h2>
-
+				<h1>bienvenidos</h1>
+				<p class="texto-centrado">esto es un parrafo</p>
+				<p>esto es otro parrafo</p>
 
 			</div>
-		</div>
-	</body>
+			<div id="caja1">
+				esta es la caja 1
+			</div>
+			<div id="caja2">
+				esta es la caja 2
+			</div>
+			<div class="crl">
+				<ul class="mi-lista">
+				<li>lunes</li>
+				<li>martes</li>
+				<li>miercoles</li>
+				<li>jueves</li>
+				<li>viernes</li> 
+			</ul>
+			</div>
+			
+			</body>
 </html>
